@@ -32,7 +32,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass.set("advent_day_1.AppKt")
+    mainClass.set("advent.AppKt")
 }
 
 tasks.named<Test>("test") {

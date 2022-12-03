@@ -1,4 +1,4 @@
-package advent_day_1
+package advent
 
 import java.io.File
 
@@ -48,8 +48,4 @@ class RockingThoseScissors {
         const val PAPER = 2
         const val SCISSORS = 3
     }
-}
-
-fun main() {
-    println(RockingThoseScissors().beatThemAll())
 }
