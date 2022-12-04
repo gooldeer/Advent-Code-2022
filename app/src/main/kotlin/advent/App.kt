@@ -8,4 +8,5 @@ fun main(args: Array<String>) {
     )
     println(RockingThoseScissors().beatThemAll())
     println(WhoHasBeerInRucksack().findBadges().sum())
+    println(CleaningOptimizer().findUselessPairs().count { it })
 }
