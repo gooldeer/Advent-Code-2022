@@ -2,7 +2,7 @@ package advent
 
 import java.io.File
 
-class RockingThoseScissors {
+class Day2 : AdventDay {
 
     fun pointsForRound(oponent: Int, me: Int) = when {
         oponent == me -> DEUCE
@@ -48,4 +48,6 @@ class RockingThoseScissors {
         const val PAPER = 2
         const val SCISSORS = 3
     }
+
+    override fun run() = beatThemAll()
 }

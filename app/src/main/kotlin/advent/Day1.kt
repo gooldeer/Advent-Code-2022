@@ -5,7 +5,7 @@ package advent
 
 import java.io.File
 
-class FatSanta {
+class Day1: AdventDay {
 
     private fun elfsSnacks() = File("input/fatties.txt")
         .readText()
@@ -21,4 +21,6 @@ class FatSanta {
     fun findTopFatties(top: Int) = elfsSnacks()
         .sortedByDescending { it.second }
         .take(top)
+
+    override fun run() = findTopFatties(3).sumOf { it.second }
 }

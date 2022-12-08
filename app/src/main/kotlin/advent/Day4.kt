@@ -2,7 +2,7 @@ package advent
 
 import java.io.File
 
-class CleaningOptimizer {
+class Day4 : AdventDay {
 
     fun readInput() = File("input/cleaning.txt").readLines()
 
@@ -23,4 +23,6 @@ class CleaningOptimizer {
             .let { it[0].toInt()..it[1].toInt() }
         }
         .let { it[0] to it[1] }
+
+    override fun run() = findUselessPairs().count { it }
 }

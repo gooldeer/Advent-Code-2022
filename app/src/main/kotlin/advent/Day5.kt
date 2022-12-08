@@ -2,7 +2,7 @@ package advent
 
 import java.io.File
 
-class PoorCraneOperator {
+class Day5 : AdventDay {
 
     fun readInitialStack(): List<ArrayDeque<Char>> = listOf(
         ArrayDeque(listOf('Z', 'N')),
@@ -63,6 +63,7 @@ class PoorCraneOperator {
     }
 
     fun goForIt() = readInitialStackFromFile().rearrangleBy(readMovingSchemeFromFile()).map { it.lastOrNull() }
+    override fun run(): Any = goForIt().joinToString(separator = "")
 }
 
 data class MovingEvent(val quantity: Int, val from: Int, val to: Int)

@@ -2,7 +2,7 @@ package advent
 
 import java.io.File
 
-class WhoHasBeerInRucksack {
+class Day3 : AdventDay {
 
     fun readInput() = File("input/rucksacks.txt")
         .readText()
@@ -23,6 +23,8 @@ class WhoHasBeerInRucksack {
 
     fun List<String>.findSameItem() = joinToString()
         .find { all { s -> s.contains(it)} }
+
+    override fun run() = findBadges().sum()
 }
 
 fun Char.toPoins(): Int {
