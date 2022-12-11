@@ -46,8 +46,6 @@ class Day11 : AdventDay {
                 it.step(monkeys)
             }
         }
-        print(monkeys)
-        println(counts)
         return counts.values.sortedDescending().let { it[0] * it[1] }
     }
 

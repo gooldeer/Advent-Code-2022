@@ -9,6 +9,7 @@ fun main(args: Array<String>) {
         Day5(),
         Day6(),
         Day7(),
+        Day10(),
         Day11(),
     )
     days.forEach { println("${it.javaClass.name} : ${it.run()}") }
